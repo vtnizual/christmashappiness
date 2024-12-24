@@ -1,0 +1,329 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('gs.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; /* Ngăn cuộn dọc và ngang */
+  z-index: 0; /* Ensure it's behind the partial */
+  position: relative;
+}
+
+/* CSS background tuyết */
+
+.snow, .snow:before, .snow:after {
+  position: absolute;
+  top: -600px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image:  radial-gradient(4px 4px at 378px 46px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 302px 384px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 304px 98px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 527px 41px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 137px 581px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 387px 541px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 580px 46px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 530px 344px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 114px 87px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 283px 576px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 197px 315px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 270px 299px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 505px 405px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 458px 88px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 197px 64px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 521px 411px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 256px 475px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 144px 379px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 210px 492px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 335px 370px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 543px 554px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 323px 192px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 92px 208px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 66px 389px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 123px 74px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 253px 172px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 166px 99px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 116px 377px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 283px 99px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 286px 87px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 103px 281px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 324px 355px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 27px 130px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 297px 257px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 26px 250px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 565px 172px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 444px 493px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 176px 192px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 421px 80px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 205px 192px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 576px 38px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 439px 370px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 201px 108px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 267px 462px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 496px 129px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 265px 101px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 442px 514px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 351px 155px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 285px 139px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 245px 503px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 372px 192px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 443px 313px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 41px 343px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 139px 56px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 521px 201px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 223px 588px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 538px 224px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 271px 111px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 85px 81px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 272px 274px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 272px 568px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 105px 573px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 271px 391px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 241px 26px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 313px 441px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 430px 183px, rgba(255, 255, 255, 0.6) 50%, rgba(0, 0, 0, 0)), radial-gradient(5px 5px at 543px 331px, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0)), radial-gradient(6px 6px at 159px 349px, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 515px 293px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), radial-gradient(4px 4px at 7px 519px, rgba(255, 255, 255, 0.7) 50%, rgba(0, 0, 0, 0));
+  background-size: 600px 600px;
+  animation: snow 10s linear infinite;
+  content: "";
+}
+.snow:after {
+  margin-left: -200px;
+  opacity: 0.4;
+  animation-duration: 20s;
+  animation-direction: reverse;
+  filter: blur(3px);
+}
+.snow:before {
+  animation-duration: 30s;
+  animation-direction: reverse;
+  margin-left: -300px;
+  opacity: 0.65;
+  filter: blur(1.5px);
+}
+@keyframes snow {
+  to {
+    transform: translateY(600px);
+ }
+}
+
+/* CSS trang login */
+
+form {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 360px;
+  max-width: 90%;
+  color: white;
+  position: flex;
+  z-index: 1; /* Ensure it's behind the partial */
+
+}
+
+input {
+  width: calc(100% - 30px);
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+input:focus {
+  border-color: #ff80a1;
+  box-shadow: 0 0 10px rgba(255, 128, 161, 0.5);
+}
+
+button {
+  width: calc(100% - 30px);
+  padding: 15px;
+  background-color: #ff80a1;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: #f0215c;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: -10px;
+  display: none;
+  font-weight: bold;
+}
+.success {
+  color: limegreen;
+  font-size: 14px;
+  margin-bottom: -10px;
+  display: none;
+  font-weight: bold;
+}
+
+/* CSS trang chính */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 80px; 
+  gap: 10px;
+}
+
+h1 {
+  position: fixed; /* Giữ vị trí cố định khi cuộn */
+  top: 0; /* Đặt ở trên cùng */
+  left: 50%; /* Căn giữa theo chiều ngang */
+  transform: translateX(-50%); /* Dịch chuyển để căn giữa chính xác */
+  margin-top: 40px; 
+  font-size: 35px;
+  text-shadow: 
+  1.2px 1.2px 0px rgb(253, 253, 253), /* Viền bên phải dưới */
+  -1.2px 1.2px 0px rgb(253, 253, 253), /* Viền bên trái dưới */
+  -1.2px -1.2px 0px rgb(253, 253, 253), /* Viền bên trái trên */
+  1.2px -1.2px 0px rgb(253, 253, 253); /* Viền bên phải trên */
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: nowrap; 
+  color: #1f461a;
+  text-align: center;
+  z-index: 1000; /* Hiển thị phía trên các phần tử khác */
+}
+
+.gift-box {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  background-image: url('box.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px; /* Bo góc */
+  cursor: pointer;
+  margin: 20px;
+  margin-bottom: 55px;
+  transition: transform 0.5s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+}
+
+.gift-box:hover {
+  transform: scale(1.2);
+}
+
+.gift-box .lid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-image: url('box.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 8px 8px 0 0; /* Bo góc */
+  transition: transform 0.5s ease;
+}
+
+.gift-box .lid .bow-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px; /* Kích thước phù hợp */
+  height: auto;
+  z-index: 1; /* Hiển thị trên các phần tử khác */
+}
+
+.gift-box .ribbon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 100%;
+  background-image: url('ribbon.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px; /* Bo góc */
+  transform: translate(-50%, -50%);
+}
+
+.gift-box .ribbon::before,
+.gift-box .ribbon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  background-image: url('ribbon.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px; /* Bo góc */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.gift-box .ribbon-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 15px;
+  background-image: url('ribbon copy.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  border-radius: 2px; /* Bo góc */
+  z-index: 0; /* Đặt dưới các phần tử khác */
+}
+
+.gift-box .content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 75%;
+  height: 50%;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  line-height: normal; /* Đặt lại để không ảnh hưởng */
+  border-radius: 5px; /* Bo góc */
+  transform: translate(-50%, -50%); /* Dịch chuyển hoàn toàn vào giữa */
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  display: flex; /* Kích hoạt Flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+
+.gift-box.open .lid {
+  transform: translateY(-50px) rotateX(45deg);
+}
+
+.gift-box.open .content {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 430px) and (max-height: 950px) {
+  .gift-box {
+    width: 120px;
+    height: 120px;
+  }
+
+  .gift-box .lid {
+    height: 40px;
+  }
+
+  .gift-box .lid .bow-image {
+    width: 90px; /* Điều chỉnh kích thước nơ trên thiết bị nhỏ */
+  }
+
+  .gift-box .content {
+    font-size: 10px;
+  }
+  h1 {
+    position: fixed; /* Giữ vị trí cố định khi cuộn */
+    top: 0; /* Đặt ở trên cùng */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%); /* Dịch chuyển để căn giữa chính xác */
+    margin-top: 100px; 
+    font-size: 30px;
+    text-shadow: 
+    1px 1px 0px rgb(253, 253, 253), /* Viền bên phải dưới */
+    -1px 1px 0px rgb(253, 253, 253), /* Viền bên trái dưới */
+    -1px -1px 0px rgb(253, 253, 253), /* Viền bên trái trên */
+    1px -1px 0px rgb(253, 253, 253); /* Viền bên phải trên */
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap; /* Giữ tất cả chữ trên 1 dòng */
+    color: #1f461a;
+    text-align: center;
+    z-index: 1000; /* Hiển thị phía trên các phần tử khác */
+  }
+  form {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 320px;
+    max-width: 90%;
+    color: white;
+    position: flex;
+    z-index: 1; /* Ensure it's behind the partial */
+  }
+}
+@media screen and (max-width: 768px) {
+  .snow, .snow:before, .snow:after {
+    background-size: 300px 300px; /* Giảm kích thước tuyết */
+    animation-duration: 15s; /* Làm tuyết rơi chậm hơn */
+    opacity: 0.8; /* Giảm độ đậm */
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .snow, .snow:before, .snow:after {
+    background-size: 200px 200px; /* Kích thước tuyết nhỏ hơn cho màn hình nhỏ */
+    animation-duration: 20s; /* Làm tuyết rơi chậm hơn */
+    opacity: 0.6; /* Giảm độ đậm thêm */
+  }
+}

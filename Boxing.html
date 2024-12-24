@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Happiness</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Hàm mở tab mới với delay
+    function openGiftWithDelay(url, delay) {
+      setTimeout(() => {
+        window.open(url, '_blank'); // Mở tab mới sau khi delay
+      }, delay); // Thời gian delay tính bằng milliseconds
+    }
+  </script>
+</head>
+<body>
+  <audio id="background-music" autoplay loop style="display: none;" muted>
+    <source src="jingle-bells-christmas-holidays-celebration-background-intro-theme-265841.mp3" type="audio/mpeg">
+    <source src="jingle-bells-christmas-holidays-celebration-background-intro-theme-265841.ogg" type="audio/ogg">    
+  </audio>
+  <script>
+    document.body.addEventListener('click', () => {
+      const audio = document.getElementById('background-music');
+      audio.muted = false; // Bỏ tắt tiếng
+      audio.play();
+    });
+  </script>
+  
+  <div class="snow"></div>
+  <h1>Open the box! <br>🎄🎅🏻🎄</h1>
+  <div class="container">
+    <div class="gift-box" onclick="this.classList.toggle('open'); openGiftWithDelay('https://docs.google.com/document/d/1D5gtx0HQ_AFOV6SpeuHe-im_c1uDigsB/edit?usp=sharing&ouid=114889445467139803691&rtpof=true&sd=true', 800);">
+      <div class="lid">
+        <img src="bow2.png" alt="Nơ" class="bow-image">
+      </div>
+      <div class="ribbon"></div>
+      <div class="ribbon-horizontal"></div>
+    </div>
+    <div class="gift-box" onclick="this.classList.toggle('open'); openGiftWithDelay('https://drive.google.com/file/d/1XUdtowMHRV4I1KOJnq48P93HtoIiNU7d/view?usp=sharing', 800);">
+      <div class="lid">
+        <img src="bow9.png" alt="Nơ" class="bow-image">
+      </div>
+      <div class="ribbon"></div>
+      <div class="ribbon-horizontal"></div>
+    </div>
+    <div class="gift-box" onclick="this.classList.toggle('open'); openGiftWithDelay('https://drive.google.com/file/d/1Rr0Kv9un1cbzKwzGjagC8SBA7tvdnUTo/view?usp=sharing', 800);">
+      <div class="lid">
+        <img src="bow10.png" alt="Nơ" class="bow-image">
+      </div>
+      <div class="ribbon"></div>
+      <div class="ribbon-horizontal"></div>
+    </div>
+    <div class="gift-box" onclick="this.classList.toggle('open'); openGiftWithDelay('https://drive.google.com/file/d/1ndi7kDqbNYsSn_sMLOr7bGIsRB6XZWGo/view?usp=sharing', 800);">
+      <div class="lid">
+        <img src="bow8.png" alt="Nơ" class="bow-image">
+      </div>
+      <div class="ribbon"></div>
+      <div class="ribbon-horizontal"></div>
+    </div>
+  </div>
+</body>
+</html>
